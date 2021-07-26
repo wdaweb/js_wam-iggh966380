@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打地鼠</title>
+
+    <style>
+
+        #container {
+            border: 2px black solid;
+            width: 500px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .hole {
+            border: 2px black solid;
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            margin-left: 18px;
+        }
+
+        .ratpic {
+            background-image: url(images/地鼠.png);
+            background-repeat: no-repeat;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            }    
+        
+        .moleGotHit {
+            background-image: url(images/地鼠被揍.png);
+            background-repeat: no-repeat;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+        }
+
+        #msgbar {
+            display: flex;
+            width: 500px;
+        }
+        
+        #countdown {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <button id="start">開始</button>
+    <div id="msgbar">
+        <h1 id="score"></h1>
+        <h1 id="countdown"></h1>
+    </div>
+    <div id="container">
+        <div class="hole">
+            <div class="picarea"></div>
+        </div>
+        <div class="hole">
+            <div class="picarea"></div>
+        </div>
+        <div class="hole">
+            <div class="picarea"></div>
+        </div>
+        <div class="hole">
+            <div class="picarea"></div>
+        </div>
+        <div class="hole">
+            <div class="picarea"></div>
+        </div>
+        <div class="hole">
+            <div class="picarea"></div>
+        </div>
+        <div class="hole">
+            <div class="picarea"></div>
+        </div>
+        <div class="hole">
+            <div class="picarea"></div>
+        </div>
+        <div class="hole">
+            <div class="picarea"></div>
+        </div>
+    </div>
+
+    玩家:<span id="highnametext">沒有人</span> <br>
+	分數:<span id="highscoretext">0</span> 分<br>
+    
+    <script src="script.js"></script>
+</body>
+</html>
